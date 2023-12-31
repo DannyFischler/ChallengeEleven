@@ -1,6 +1,28 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "id": "1",
+      "title": "Grocery List",
+      "text": "Buy milk, eggs, bread, and vegetables."
+    },
+    {
+      "id": "2",
+      "title": "Meeting Agenda",
+      "text": "Discuss project status, assign tasks, and set deadlines."
+    },
+    {
+      "id": "3",
+      "title": "Book Recommendations",
+      "text": "Read 'The Great Gatsby' and 'To Kill a Mockingbird'."
+    },
+    {
+      "id": "4",
+      "title": "Travel Plans",
+      "text": "Book flight tickets and reserve a hotel for the vacation."
+    },
+    {
+      "id": "5",
+      "title": "Workout Routine",
+      "text": "Monday: Cardio, Wednesday: Strength training, Friday: Yoga."
     }
-]
+  ]
+  
