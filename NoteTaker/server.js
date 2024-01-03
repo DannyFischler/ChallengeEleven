@@ -1,6 +1,6 @@
 const express = require('express');
-const apiRoutes = require('./NoteTaker/routes/apiRoutes');
-const htmlRoutes = require('./NoteTaker/routes/htmlRoutes');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;

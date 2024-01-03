@@ -23,19 +23,19 @@ class DataStore {
     await writeFileAsync(this.filePath, JSON.stringify(data, null, 2));
   }
 
-  async getNotes() {
+  async getAllNotes() {
     const notes = await this.read();
     return Array.isArray(notes) ? notes : [];
   }
 
-  async addNote(note) {
+  async addNewNote(note) {
     if (!note.title || !note.text) {
       throw new Error("Cannot be blank");
     }
 
     const newNote = { ...note, id: uuidv1() };
 
-    const notes = await this.getNotes();
+    const notes = await this.getAllNotes();
     notes.push(newNote);
 
     await this.write(notes);
@@ -43,8 +43,8 @@ class DataStore {
     return newNote;
   }
 
-  async removeNote(id) {
-    const notes = await this.getNotes();
+  async deleteNoteById(id) {
+    const notes = await this.getAllNotes();
     const updatedNotes = notes.filter((note) => note.id !== id);
     await this.write(updatedNotes);
   }
